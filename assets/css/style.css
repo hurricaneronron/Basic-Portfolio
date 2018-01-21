@@ -1,0 +1,175 @@
+/* applies to all pages */
+
+html {
+    height: 100%;
+}   /* sticky footer code */
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/dust_scratches.png");
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+}   /* sticky footer code: margin through overflow */
+
+#container {
+    min-height: 100%;
+    position: relative;
+}   /* sticky footer code */
+
+#header {
+    top: auto;
+    background-color: #ffffff;
+    border: 2px solid #cccccc;
+    height: 80px;
+    /* padding: 10px; */
+}   /* sticky footer code: padding */
+
+#nameHeading {
+    background-color: #4aaaa5;
+    color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    width: 300px;
+    text-align: center;
+    float: left;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    margin-left: 150px;
+    line-height: 80px;
+}
+
+#links {
+    float: right;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 80px;
+    margin-right: 300px;
+}
+
+#mainbody {
+    width: 960px;
+    margin: auto;
+    padding-bottom: 80px; /* height of the footer */
+}   /* sticky footer code: padding-bottom */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#about, #portfolio, #contact {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 40px 0px 0px 0px;
+    float: left;
+    width: 50%;
+}
+/* bottom of these is behind footer? */
+
+.tealHeading {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#sidebar {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 40px 0px 0px 40px;
+    float: left;
+    width: 20%;
+}
+
+.accounts {
+    height: 55px;
+    width: 55px;
+}
+
+#footer {
+    background-color: #666666;
+    color: white;
+    border-top: 5px solid #4aaaa5;
+    height: 80px; /* height of the footer */
+    text-align: center;
+    line-height: 80px;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}   /* sticky footer code: position-width */
+
+/* (index) about page */
+#myphoto {
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 200%;
+}
+
+/* portfolio page */
+.imagelabel {
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 20px 15px 25px 15px;
+    overflow: auto;
+}
+
+.imagelabel h4 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 0;
+    line-height: 45px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+}
+
+.imagelabel img {
+    width: 100%
+}
+
+/* contact page */
+label, textarea, #name, #email {
+    display: block;
+    width: 100%;
+    margin: 8px 8px 0px 0px;
+}
+
+input {
+    line-height: 200%;
+}
+
+textarea {
+    height: 150px;
+}
+
+#submit {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 4px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

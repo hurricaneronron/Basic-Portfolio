@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>About | Veronica Przybyl</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Veronica Przybyl</h1>
+<div id="container">
 
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </header>
+    <div id="header">
+        <header>
+            <h1 id="nameHeading">Veronica Przybyl</h1>
+            <section id="links">
+            <a href="index.html">About</a>
+            <span>|</span>
+            <a href="portfolio.html">Portfolio</a>
+            <span>|</span>
+            <a href="contact.html">Contact</a>
+            </section>
+        </header>
+    </div>
 
-    <div class="contact">
-        <h1>Contact</h1>
+<div id="mainbody" class="clearfix">
+    <div id="contact">
+        <h1 class="tealHeading">Contact</h1>
+        <hr>
 
         <form action="action_page.php">    
           <label for="name">Name</label>
@@ -26,20 +37,25 @@
           <input type="text" id="email" name="email" placeholder="example@gmail.com">
       
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="" style="height:200px"></textarea>
+          <textarea id="message" name="message" placeholder=""></textarea>
       
-          <input type="submit" value="Submit">     
+          <input type="button" id="submit" value="Submit">     
         </form>
     </div>
 
-    <div class="sidebar">
-        <h2>Connect with Me</h2>
-        
-        <a target="_blank" href="https://github.com/hurricaneronron"><img src="./assets/images/logo-github.svg" alt="GitHub" height="60" width="60"></a>
-        <a target="_blank" href="https://www.linkedin.com/in/veronica-przybyl-564457155/"><img src="./assets/images/logo-linkedin.png" alt="LinkedIn" height="60" width="60"></a>
-        <a target="_blank" href="https://stackoverflow.com/users/9231969/hurricaneronron"><img src="./assets/images/logo-stackoverflow.png" alt="Stack Overflow" height="60" width="60"></a>
+    <div id="sidebar">
+        <h3 class="tealHeading">Connect with Me</h3>
+        <hr>
+        <a target="_blank" href="https://github.com/hurricaneronron"><img class="accounts" src="./assets/images/logo-github.svg" alt="GitHub"></a>
+        <a target="_blank" href="https://www.linkedin.com/in/veronica-przybyl-564457155/"><img class="accounts" src="./assets/images/logo-linkedin.png" alt="LinkedIn"></a>
+        <a target="_blank" href="https://stackoverflow.com/users/9231969/hurricaneronron"><img class="accounts" src="./assets/images/logo-stackoverflow.png" alt="Stack Overflow"></a>
     </div>
+</div>
 
+<div id="footer">
     <footer>&copy; Copyright 2018 Veronica Przybyl</footer>
+</div>
+
+</div>
 </body>
 </html>
