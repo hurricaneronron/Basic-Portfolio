@@ -70,6 +70,8 @@ body {
     width: 50%;
 }
 /* bottom of these is behind footer? */
+/* For the life of me I couldn't get the content to sit/look right using pixels rather than percentages. */
+
 
 .tealHeading {
     color: #4aaaa5;
